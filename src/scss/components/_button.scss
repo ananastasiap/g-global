@@ -43,5 +43,15 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+
+    &:hover {
+      background-color: rgba($color-button-background, 0.7);
+      box-shadow: none;
+    }
+
+    &:active {
+      background-color: $color-button-background;
+      box-shadow: none;
+    }
   }
 }

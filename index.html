@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <!-- HEADER -->
   <header class="header u-margin-left">
     <div class="wrapper">
       <div class="logo">
@@ -30,38 +31,46 @@
       <button class="button">Sign Up</button>
     </div>
   </header>
-  <main class="main u-margin-left">
-    <div class="info-wrapper">
-      <h1 class="title title__main">Now Buy Your PIN or <span class="u-accent">Top Up</span></h1>
-      <h2 class=" title title__sub">With Bank Transfer</h2>
-      <p class="info-text">
-        We Make international calling simple, relible, and cheap basedon your unique calling behavior.
-      </p>
-      <button class="button button__cta">Get Started</button>
-
-      <form class="search-form">
-        <input type="search" class="search-form__input" maxlength="12" minlength="4"
-          placeholder="Where do you want to call?" required>
-        <button class="button button__search" type="submit"></button>
-      </form>
-    </div>
-    <section class="visual">
-      <div class="spin">
-        <img class="flag" src="#" alt="Indian flag">
-        <img class="flag" src="#" alt="Indian flag">
-        <img class="flag" src="#" alt="Italian flag">
-        <img class="flag" src="#" alt="British flag">
-        <img class="flag" src="#" alt="Indian flag">
+  <!-- MAIN -->
+  <main class="u-margin-left">
+    <section class="main">
+      <!-- INFORMATION -->
+      <div class="info-wrapper">
+        <h1 class="title title__main">Now Buy Your PIN or <span class="u-accent">Top Up</span></h1>
+        <h2 class=" title title__sub">With Bank Transfer</h2>
+        <p class="info-text">
+          We Make international calling simple, relible, and cheap basedon your unique calling behavior.
+        </p>
+        <button class="button button__cta">Get Started</button>
+        <!-- FORM -->
+        <form class="search-form">
+          <input type="search" class="search-form__input" maxlength="12" minlength="4"
+            placeholder="Where do you want to call?" required>
+          <button class="button button__search" type="submit"></button>
+        </form>
       </div>
+      <!-- PICTURE + ANIMATION -->
+      <section class="visual">
+        <div class="spin">
+          <img class="flag" src="#" alt="Indian flag">
+          <img class="flag" src="#" alt="Indian flag">
+          <img class="flag" src="#" alt="Italian flag">
+          <img class="flag" src="#" alt="British flag">
+          <img class="flag" src="#" alt="Indian flag">
+        </div>
+      </section>
     </section>
+    <!-- FOOTER -->
     <footer class="footer">
       <nav class="list-users">
         <li class="list-users__user"></li>
         <li class="list-users__user"></li>
         <li class="list-users__user"></li>
-        <li class="list-users__user"></li>
+        <li class="list-users__user">+</li>
       </nav>
-      <p class="footer__text">45k+ Regular User.<span>View Price Plan</span></p>
+      <p class="footer-text">45k+ Regular User. <a href="#" class="u-accent-lighter footer-text__accent">View Price
+          Plan</a>
+      </p>
     </footer>
   </main>
   <script type="module" src="/src/js/main.js"></script>
