@@ -6,7 +6,7 @@
   padding: 11px 23px;
 
   font-size: 16px;
-  color: $color-text-button;
+  color: $color-white;
   background: $color-button-background;
 
   border: none;
@@ -23,5 +23,25 @@
   &:active {
     background-color: $color-button-background;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  &__cta {
+    margin-top: 30px;
+    padding: 14px 23px;
+    font-size: 15px;
+    border-radius: 30px;
+  }
+
+  &__search {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    width: 55px;
+    height: 55px;
+
+    background-image: url(/public/images/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
   }
 }
