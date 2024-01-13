@@ -1,0 +1,55 @@
+.header {
+  margin-top: 31px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 267px;
+
+  &__img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 8px;
+  }
+
+  &__text-link {
+    font-size: 25px;
+    font-weight: 500;
+    color: $color-text-darker;
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 44px;
+  margin-right: 242px;
+
+  &__item {
+    font-size: 16px;
+    position: relative;
+    transition: all 1s ease-in;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 21px;
+      height: 1.5px;
+      border-bottom: 1.5px solid $color-accent;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "../base/_animations";
+
+.spinner {
+  margin-top: 84px;
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border-radius: 450px;
+  border: 2px solid #e8e8e8;
+
+  &::before {
+    position: absolute;
+    top: 115px;
+    right: 78px;
+    content: "";
+    width: 280px;
+    height: 280px;
+    background-color: $color-button-background;
+    border-radius: 50%;
+    z-index: 1;
+    transform-origin: center;
+  }
+
+  &__woman {
+    position: absolute;
+    top: 42px;
+    right: 70px;
+    width: auto;
+    height: 557px;
+    z-index: 3;
+  }
+}
+
+.spin-wrapper {
+  width: 450px;
+  height: 450px;
+  animation: out 3s ease-out;
+
+  &.rotate-animation {
+    animation: spinner 10s infinite linear;
+  }
+}
+
+.flag {
+  position: absolute;
+  border: 10px solid #fff;
+  box-shadow: 0px 10px 30px 0px rgba(148, 148, 148, 0.1);
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+
+  &__india-small {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__britain,
+  &__india-big {
+    width: 75px;
+    height: 75px;
+  }
+
+  &__italia {
+    width: 57px;
+    height: 57px;
+  }
+}
+
+.india-s-first {
+  top: 245px;
+  left: -19px;
+}
+
+.india-s-second {
+  top: 245px;
+  right: -23px;
+}
+
+.flag__britain {
+  top: 77px;
+  left: -8px;
+}
+
+.flag__india-big {
+  top: 82px;
+  right: -10px;
+}
+
+.flag__italia {
+  top: -30px;
+  left: 215px;
+}
