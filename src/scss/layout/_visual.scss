@@ -18,7 +18,7 @@
     content: "";
     width: 280px;
     height: 280px;
-    background-color: $color-button-background;
+    background-color: $color-tertiary-darker;
     border-radius: 50%;
     z-index: 1;
     transform-origin: center;
@@ -94,6 +94,7 @@
   left: 215px;
 }
 
+/* --- MEDIA --- */
 @media (max-width: 990px) {
   .visual {
     order: 2;
@@ -121,9 +122,34 @@
     width: 350px;
     height: 350px;
   }
+
+  .india-s-first {
+    top: 191px;
+    left: -22px;
+  }
+
+  .india-s-second {
+    top: 183px;
+    right: -25px;
+  }
+
+  .flag__britain {
+    top: 46px;
+    left: -12px;
+  }
+
+  .flag__india-big {
+    top: 48px;
+    right: -15px;
+  }
+
+  .flag__italia {
+    top: -29px;
+    left: 150px;
+  }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .spinner {
     width: 250px;
     height: 250px;

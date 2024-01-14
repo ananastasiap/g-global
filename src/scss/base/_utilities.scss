@@ -7,12 +7,13 @@
 }
 
 .u-accent {
-  color: $color-accent-brighter;
+  color: $color-secondary-darker;
 }
 .u-accent-lighter {
-  color: $color-accent-lighter;
+  color: $color-secondary;
 }
 
+/* --- MEDIA --- */
 @media (max-width: 991px) {
   .u-margin-left {
     margin-left: 0;

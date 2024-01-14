@@ -8,7 +8,7 @@
   width: 597px;
   height: 62px;
   border-radius: 100px;
-  background: $color-white;
+  background: #fff;
   box-shadow: 0px 20px 30px 0px rgba(222, 222, 222, 0.25);
 
   &__input {
@@ -17,18 +17,19 @@
     height: 100%;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    color: $color-text;
-    background-color: $color-white;
+    color: $color-primary;
+    background-color: #fff;
     border-radius: 100px;
     border: none;
     outline: none;
 
     &::placeholder {
-      color: $color-text-lighter;
+      color: $color-primary-lighter;
     }
   }
 }
 
+/* --- MEDIA --- */
 @media (max-width: 990px) {
   .info-wrapper {
     order: 1;
@@ -42,7 +43,7 @@
 
 @media (max-width: 576px) {
   .search-form {
-    width: 510px;
+    width: 366px;
   }
 }
 
