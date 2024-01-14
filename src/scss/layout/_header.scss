@@ -185,9 +185,25 @@
 
 @media screen and (max-width: 550px) {
   .menu {
-    width: 70%;
-    left: 27%;
-    height: 35%;
+    width: 40%;
+    left: 57%;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .logo {
+    margin-right: 50px;
+  }
+
+  .menu__item--link {
+    font-size: 11px;
+  }
+
+  .menu {
+    width: 42%;
+    left: 54%;
+    height: 34%;
+    padding: 20px;
   }
 }
 
@@ -197,5 +213,11 @@
   }
   .logo__text-link {
     display: none;
+  }
+
+  .menu {
+    width: 46%;
+    height: 37%;
+    left: 49%;
   }
 }
