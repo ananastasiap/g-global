@@ -13,9 +13,9 @@
   margin-right: 267px;
 
   &__img {
-    margin-right: 8px;
     max-width: 40px;
     max-height: 40px;
+    margin-right: 8px;
   }
 
   &__text-link {
@@ -31,20 +31,21 @@
   margin-right: 242px;
 
   &__item {
-    font-size: 16px;
     position: relative;
+    font-size: 16px;
     transition: all 1s ease-in;
 
     &::after {
-      content: "";
       position: absolute;
+      content: "";
       bottom: -4px;
       left: 50%;
-      transform: translateX(-50%);
       width: 21px;
       height: 1.5px;
+
       border-bottom: 1.5px solid $color-secondary-lighter;
       opacity: 0;
+      transform: translateX(-50%);
       transition: opacity 0.4s ease-in-out;
     }
 
@@ -55,9 +56,9 @@
 }
 
 .burger {
-  display: none;
   position: relative;
   z-index: 50;
+  display: none;
   align-items: center;
   justify-content: flex-end;
   width: 30px;
@@ -123,20 +124,22 @@
   }
 
   .menu {
+    position: fixed;
+    top: 4%;
+    left: 73%;
+    z-index: 50;
     display: none;
+
     flex-direction: column;
     justify-items: center;
     justify-content: center;
     text-align: center;
-    position: fixed;
     gap: 15px;
     height: 40%;
     width: 25%;
-    top: 4%;
-    left: 73%;
-    z-index: 50;
-    overflow-y: auto;
     padding: 30px;
+
+    overflow-y: auto;
     background-color: $color-tertiary-darker;
     border-radius: 20px;
 
@@ -203,8 +206,8 @@
   }
 
   .menu {
-    width: 42%;
     left: 54%;
+    width: 42%;
     height: 34%;
     padding: 20px;
   }
@@ -219,8 +222,8 @@
   }
 
   .menu {
+    left: 49%;
     width: 46%;
     height: 37%;
-    left: 49%;
   }
 }
