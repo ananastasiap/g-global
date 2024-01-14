@@ -151,3 +151,18 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 576px) {
+  .logo {
+    margin-right: 208px;
+  }
+}
+
+@media (max-width: 391px) {
+  .logo {
+    margin-right: 50px;
+  }
+  .logo__text-link {
+    display: none;
+  }
+}

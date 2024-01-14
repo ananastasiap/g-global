@@ -39,3 +39,15 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 576px) {
+  .search-form {
+    width: 510px;
+  }
+}
+
+@media (max-width: 391px) {
+  .search-form {
+    width: 328px;
+  }
+}

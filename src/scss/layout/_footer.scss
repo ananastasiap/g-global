@@ -40,3 +40,10 @@
     }
   }
 }
+
+@media (max-width: 820px) {
+  .list-users__user {
+    width: 28px;
+    height: 28px;
+  }
+}
