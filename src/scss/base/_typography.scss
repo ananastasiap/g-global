@@ -35,3 +35,11 @@ body {
     font-weight: 500;
   }
 }
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+}

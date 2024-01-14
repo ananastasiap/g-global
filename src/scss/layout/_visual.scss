@@ -93,3 +93,32 @@
   top: -30px;
   left: 215px;
 }
+
+@media (max-width: 990px) {
+  .visual {
+    order: 2;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .spinner {
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+
+    &::before {
+      width: 190px;
+      height: 190px;
+    }
+
+    &__woman {
+      height: 389px;
+    }
+  }
+
+  .spin-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+}

@@ -14,7 +14,7 @@
 
 <body>
   <!-- HEADER -->
-  <header class="header u-margin-left">
+  <header class="header u-margin-left u-paddings">
     <div class="wrapper">
       <div class="logo">
         <img class="logo__img" src="/images/icons/logo.svg" alt="Upper case G in orange circle">
@@ -28,11 +28,17 @@
         <li class="menu__item"><a class="menu__item--link" href="#">Help</a></li>
       </nav>
 
-      <button class="button">Sign Up</button>
+      <div class="wrapper-for-response">
+        <button class="button button__sign">Sign Up</button>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
     </div>
+
   </header>
   <!-- MAIN -->
-  <main class="u-margin-left">
+  <main class="u-margin-left u-paddings">
     <section class="main">
       <!-- INFORMATION -->
       <div class="info-wrapper">
@@ -63,18 +69,18 @@
       </section>
     </section>
     <!-- FOOTER -->
-    <footer class="footer">
-      <nav class="list-users">
-        <li class="list-users__user"></li>
-        <li class="list-users__user"></li>
-        <li class="list-users__user"></li>
-        <li class="list-users__user">+</li>
-      </nav>
-      <p class="footer-text">45k+ Regular User. <a href="#" class="u-accent-lighter footer-text__accent">View Price
-          Plan</a>
-      </p>
-    </footer>
   </main>
+  <footer class="footer u-margin-left u-paddings">
+    <nav class="list-users">
+      <li class="list-users__user"></li>
+      <li class="list-users__user"></li>
+      <li class="list-users__user"></li>
+      <li class="list-users__user">+</li>
+    </nav>
+    <p class="footer-text">45k+ Regular User. <a href="#" class="u-accent-lighter footer-text__accent">View Price
+        Plan</a>
+    </p>
+  </footer>
   <script type="module" src="/src/js/main.js"></script>
 </body>
 
