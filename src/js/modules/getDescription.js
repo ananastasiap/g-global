@@ -12,12 +12,12 @@ export const getDescription = (selectorForText) => {
 
       text.textContent = data[0];
     } else {
-      console.error("Ошибка при выполнении запроса:", request.statusText);
+      console.error("Error when executing the request:", request.statusText);
     }
   };
 
   request.onerror = function () {
-    alert("Сетевая ошибка при выполнении запроса.");
+    alert("A network error occurred while executing the request.");
   };
 
   request.send();
