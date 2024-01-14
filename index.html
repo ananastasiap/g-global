@@ -7,8 +7,8 @@
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" async>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" async>
   <link rel="icon" href="/favicon/favicon.ico" type="image/svg+xml">
   <title>Global</title>
 </head>
@@ -18,7 +18,8 @@
   <header class="header u-margin-left u-paddings">
     <div class="wrapper">
       <div class="logo">
-        <img class="logo__img" src="/images/icons/logo.svg" alt="Upper case G in orange circle">
+        <img class="logo__img" src="/images/icons/logo.svg" alt="Upper case G in orange circle" loading="lazy"
+          width="40" height="40">
         <a class="logo__text-link" href="/">Global</a>
       </div>
 
@@ -58,13 +59,13 @@
       <!-- PICTURE + ANIMATION -->
       <section class="visual">
         <div class="spinner">
-          <img src="/images/woman.png" alt="#" class="spinner__woman">
+          <img src="/images/woman.png" alt="#" class="spinner__woman" loading="lazy">
           <div class="spin-wrapper">
-            <img class="flag flag__india-small india-s-first" src="/images/india.png" alt="Indian flag">
-            <img class="flag flag__india-big" src="/images/india.png" alt="Indian flag">
-            <img class="flag flag__italia" src="/images/italia.png" alt="Italian flag">
-            <img class="flag flag__britain" src="/images/britain.png" alt="British flag">
-            <img class="flag flag__india-small india-s-second" src="/images/india.png" alt="Indian flag">
+            <img class="flag flag__india-small india-s-first" src="/images/india.png" alt="Indian flag" loading="lazy">
+            <img class="flag flag__india-big" src="/images/india.png" alt="Indian flag" loading="lazy">
+            <img class="flag flag__italia" src="/images/italia.png" alt="Italian flag" loading="lazy">
+            <img class="flag flag__britain" src="/images/britain.png" alt="British flag" loading="lazy">
+            <img class="flag flag__india-small india-s-second" src="/images/india.png" alt="Indian flag" loading="lazy">
           </div>
         </div>
       </section>
@@ -82,7 +83,6 @@
         Plan</a>
     </p>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script type="module" src="/src/js/main.js"></script>
 </body>
 
