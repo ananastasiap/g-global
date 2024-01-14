@@ -2,9 +2,23 @@
   margin-left: 146px;
 }
 
+.u-paddings {
+  padding: 0;
+}
+
 .u-accent {
   color: $color-accent-brighter;
 }
 .u-accent-lighter {
   color: $color-accent-lighter;
+}
+
+@media (max-width: 991px) {
+  .u-margin-left {
+    margin-left: 0;
+  }
+
+  .u-paddings {
+    padding: 0 30px 0 30px;
+  }
 }
