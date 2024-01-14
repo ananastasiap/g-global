@@ -8,19 +8,21 @@
   position: relative;
   width: 450px;
   height: 450px;
+  border: 2px solid $color-primary-lightest;
   border-radius: 450px;
-  border: 2px solid #e8e8e8;
 
   &::before {
     position: absolute;
     top: 115px;
     right: 78px;
+    z-index: 2;
+
     content: "";
     width: 280px;
     height: 280px;
-    background-color: $color-button-background;
+
+    background-color: $color-tertiary-darker;
     border-radius: 50%;
-    z-index: 1;
     transform-origin: center;
   }
 
@@ -28,29 +30,28 @@
     position: absolute;
     top: 42px;
     right: 70px;
+    z-index: 3;
     width: auto;
     height: 557px;
-    z-index: 3;
   }
 }
 
 .spin-wrapper {
   width: 450px;
   height: 450px;
-  animation: out 3s ease-out;
 
   &.rotate-animation {
-    animation: spinner 10s infinite linear;
+    animation: spinner 10s infinite 2s linear;
   }
 }
 
 .flag {
   position: absolute;
+  z-index: 1;
   border: 10px solid #fff;
-  box-shadow: 0px 10px 30px 0px rgba(148, 148, 148, 0.1);
   border-radius: 50%;
+  box-shadow: 0px 10px 30px 0px rgba(148, 148, 148, 0.1);
   object-fit: cover;
-  z-index: 2;
 
   &__india-small {
     width: 50px;
@@ -94,12 +95,40 @@
   left: 215px;
 }
 
+/* --- MEDIA --- */
+@media (min-width: 991px) {
+  .india-s-first {
+    left: 178px;
+    animation: moveIndiaSmall1 2s ease-out 3s forwards;
+  }
+
+  .india-s-second {
+    right: 146px;
+    animation: moveIndiaSmall2 2s ease-out 4.6s forwards;
+  }
+
+  .flag__britain {
+    left: 200px;
+    animation: moveBritain 2s ease-out 3.4s forwards;
+  }
+
+  .flag__india-big {
+    right: 169px;
+    animation: moveIndiaBig 2s ease-out 4.2s forwards;
+  }
+
+  .flag__italia {
+    top: 66px;
+    animation: moveItaly 2s ease-out 3.8s forwards;
+  }
+}
+
 @media (max-width: 990px) {
   .visual {
     order: 2;
-    margin-top: 35px;
     display: flex;
     justify-content: center;
+    margin-top: 35px;
   }
 
   .spinner {
@@ -120,26 +149,52 @@
   .spin-wrapper {
     width: 350px;
     height: 350px;
+    animation: out 3s ease-out;
+  }
+
+  .india-s-first {
+    top: 191px;
+    left: -22px;
+  }
+
+  .india-s-second {
+    top: 183px;
+    right: -25px;
+  }
+
+  .flag__britain {
+    top: 46px;
+    left: -12px;
+  }
+
+  .flag__india-big {
+    top: 48px;
+    right: -15px;
+  }
+
+  .flag__italia {
+    top: -29px;
+    left: 150px;
   }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .spinner {
     width: 250px;
     height: 250px;
     border-radius: 50%;
 
     &::before {
-      width: 140px;
-      height: 140px;
       top: 68px;
       right: 56px;
+      width: 140px;
+      height: 140px;
     }
 
     &__woman {
-      height: 259px;
       top: 18px;
       right: 56px;
+      height: 259px;
     }
   }
 
@@ -150,7 +205,7 @@
 
   .flag {
     border: 5px solid #fff;
-    box-shadow: 0px 5px 15px 0px rgba(148, 148, 148, 0.1);
+    box-shadow: 0px 5px 15px 0px $color-primary-darkest;
 
     &__india-small {
       width: 25px;

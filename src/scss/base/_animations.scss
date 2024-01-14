@@ -12,3 +12,49 @@
     transform: scale(1, 1);
   }
 }
+
+/* --- FOR COUNTRIES --- */
+@keyframes moveIndiaSmall1 {
+  0% {
+    left: 178px;
+  }
+  100% {
+    left: -19px;
+  }
+}
+
+@keyframes moveBritain {
+  0% {
+    left: 195px;
+  }
+  100% {
+    left: -8px;
+  }
+}
+
+@keyframes moveItaly {
+  0% {
+    top: 66px;
+  }
+  100% {
+    top: -30px;
+  }
+}
+
+@keyframes moveIndiaBig {
+  0% {
+    right: 169px;
+  }
+  100% {
+    right: -10px;
+  }
+}
+
+@keyframes moveIndiaSmall2 {
+  0% {
+    right: 146px;
+  }
+  100% {
+    right: -23px;
+  }
+}
