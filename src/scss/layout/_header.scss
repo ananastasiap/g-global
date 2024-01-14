@@ -67,7 +67,7 @@
     height: 2px;
     width: 80%;
     transform: scale(1);
-    background-color: #000;
+    background-color: $color-primary-darkest;
   }
 
   &::before,
@@ -76,7 +76,7 @@
     position: absolute;
     height: 2px;
     width: 100%;
-    background-color: #000;
+    background-color: $color-primary-darkest;
     transition: all 0.3s ease 0s;
   }
 
@@ -125,6 +125,9 @@
   .menu {
     display: none;
     flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
     position: fixed;
     gap: 15px;
     height: 40%;
