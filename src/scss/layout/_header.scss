@@ -169,15 +169,34 @@
   }
 }
 
-// @media screen and (max-width: 576px) {
-//   .logo {
-//     margin-right: 208px;
-//   }
-// }
+@media screen and (max-width: 750px) {
+  .menu {
+    width: 30%;
+    left: 67%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .menu {
+    width: 34%;
+    left: 63%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .menu {
+    width: 40%;
+    left: 57%;
+  }
+}
 
 @media screen and (max-width: 497px) {
   .logo {
     margin-right: 50px;
+  }
+
+  .menu__item--link {
+    font-size: 11px;
   }
 }
 
@@ -187,5 +206,11 @@
   }
   .logo__text-link {
     display: none;
+  }
+
+  .menu {
+    width: 46%;
+    height: 37%;
+    left: 49%;
   }
 }
